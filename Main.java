@@ -10,9 +10,25 @@ public class Main
     int numInput=sc.nextInt();
     int sum = 0;
     while(numInput != -1){
-      numInput = sc.nextInt();
       sum += numInput;
+      numInput = sc.nextInt();
     }
     System.out.println("Sum is " + sum);
+
+    //Problem 2
+    int inputAmt = sc.nextInt();
+    int i = 0;
+    int max = 0;
+    while (i < inputAmt){
+      int valInput = sc.nextInt();
+      if (i == 0 || valInput>max){
+        max = valInput;
+      }
+      i++;
+    }
+    System.out.println("The largest score is " + max);
+
+    //Problem 3
+    
   }
 }
